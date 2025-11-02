@@ -35,6 +35,8 @@ python bc2_virtual_shifter.py
 
 
 Wait for Confirmation: The script will automatically connect. Wait for the success messages:
+(If it fails to connect the first time and the script just closes, run it again and it should work)
+
 
 🔍 Scanning for BC2... (waiting for connection)
 ✅ Found device: CYCPLUS BC2 ...
@@ -43,21 +45,6 @@ Wait for Confirmation: The script will automatically connect. Wait for the succe
 
 
 Start Riding: Open MyWhoosh (or your preferred app).
-
-## 🛠️ Customization
-
-Change which keys are sent:
-
-SHIFT_KEYS = {
-    6: 'k',  # Upshift
-    7: 'i',  # Downshift
-}
-
-
-Adjust debounce time (in milliseconds):
-
-DEBOUNCE_MS = 100
-
 
 ## 💡 Notes 
 
