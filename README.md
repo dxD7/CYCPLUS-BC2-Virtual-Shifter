@@ -1,4 +1,4 @@
-🚴‍♂️ BC2 Virtual Shifter Bridge
+## 🚴‍♂️ BC2 Virtual Shifter Bridge
 
 A small Python script that turns the CYCPLUS BC2 Bluetooth controller into a working virtual shifter for MyWhoosh.
 
@@ -6,17 +6,15 @@ It connects to the BC2 over Bluetooth, listens for the upshift and downshift but
 
 Perfect for setups like a Saris H3 or any trainer that doesn’t have built-in shifting.
 
--
 
-🧩 Features
+## 🧩 Features
 
 Automatically connects to the BC2 via Bluetooth
 
 Maps upshift → K, downshift → I (MyWhoosh defaults)
 
--
 
-⚙️ Requirements
+## ⚙️ Requirements
 
 You’ll need:
 
@@ -28,9 +26,8 @@ The following Python packages:
 
 pip install bleak pyautogui
 
--
 
-🚀 How to Use
+## 🚀 How to Use
 
 Run the script first:
 
@@ -61,9 +58,8 @@ Upshift → presses K
 
 Downshift → presses I
 
--
 
-🛠️ Customization
+## 🛠️ Customization
 
 Change which keys are sent:
 
@@ -77,9 +73,8 @@ Adjust debounce time (in milliseconds):
 
 DEBOUNCE_MS = 100
 
--
 
-💡 Notes
+## 💡 Notes
 
 Start the script before connecting the BC2 in Bluetooth settings — that’s how it’s discovered properly.
 
@@ -87,9 +82,8 @@ Tested on Windows 11 with Python 3.13.9 and MyWhoosh.
 
 Works great with the Saris H3 trainer.
 
--
 
-🧠 Background
+## 🧠 Background
 
 I bought the BC2 thinking it would just work for virtual shifting in MyWhoosh with my Saris H3 — turns out, it didn’t.
 After a lot of trial and error (and some help from ChatGPT and Gemini), I wrote this little script to make it all work properly.
