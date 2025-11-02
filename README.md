@@ -1,6 +1,3 @@
-# CYCPLUS-BC2-Virtual-Shifter
-Turn your CYCPLUS BC2 into a working virtual shifter for MyWhoosh.
-
 🚴‍♂️ BC2 Virtual Shifter Bridge
 
 A small Python script that turns the CYCPLUS BC2 Bluetooth controller into a working virtual shifter for MyWhoosh.
