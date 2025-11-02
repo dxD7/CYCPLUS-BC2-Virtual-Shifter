@@ -9,8 +9,6 @@ Perfect for setups like a Saris H3 or any trainer that doesn’t have built-in s
 
 ## 🧩 Features
 
-Automatically connects to the BC2 via Bluetooth
-
 Maps upshift → K, downshift → I (MyWhoosh defaults)
 
 
@@ -29,35 +27,22 @@ pip install bleak pyautogui
 
 ## 🚀 How to Use
 
-Run the script first:
+Wake Up/Reset Shifter: Hold both the UP (+) and DOWN (-) buttons simultaneously for about 5 seconds.
+
+Run the script:
 
 python bc2_virtual_shifter.py
 
 
-When you see:
+Wait for Confirmation: The script will automatically connect. Wait for the success messages:
 
 🔍 Scanning for BC2... (waiting for connection)
-
-
-then connect your BC2 — it will get detected automatically.
-
-Wait for:
-
 ✅ Found device: CYCPLUS BC2 ...
-
 🔗 Connected
-
 🎧 Listening for shift signals...
 
 
-Open MyWhoosh.
-
-Shift away using the BC2:
-
-Upshift → presses K
-
-Downshift → presses I
-
+Start Riding: Open MyWhoosh (or your preferred app).
 
 ## 🛠️ Customization
 
@@ -74,13 +59,9 @@ Adjust debounce time (in milliseconds):
 DEBOUNCE_MS = 100
 
 
-## 💡 Notes
+## 💡 Notes 
 
-Start the script before connecting the BC2 in Bluetooth settings — that’s how it’s discovered properly.
-
-Tested on Windows 11 with Python 3.13.9 and MyWhoosh.
-
-Works great with the Saris H3 trainer.
+Tested on Windows 11 with Python 3.13.9 and MyWhoosh using a Saris H3.
 
 
 ## 🧠 Background
