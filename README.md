@@ -9,11 +9,13 @@ It connects to the BC2 over Bluetooth, listens for the upshift and downshift but
 
 Perfect for setups like a Saris H3 or any trainer that doesn’t have built-in shifting.
 
+
 🧩 Features
 
 Automatically connects to the BC2 via Bluetooth
 
 Maps upshift → K, downshift → I (MyWhoosh defaults)
+
 
 ⚙️ Requirements
 
@@ -26,6 +28,7 @@ A Bluetooth Low Energy (BLE) adapter
 The following Python packages:
 
 pip install bleak pyautogui
+
 
 🚀 How to Use
 
@@ -70,6 +73,7 @@ Adjust debounce time (in milliseconds):
 
 DEBOUNCE_MS = 100
 
+
 💡 Notes
 
 Start the script before connecting the BC2 in Bluetooth settings — that’s how it’s discovered properly.
@@ -77,6 +81,7 @@ Start the script before connecting the BC2 in Bluetooth settings — that’s ho
 Tested on Windows 11 with Python 3.13.9 and MyWhoosh.
 
 Works great with the Saris H3 trainer.
+
 
 🧠 Background
 
