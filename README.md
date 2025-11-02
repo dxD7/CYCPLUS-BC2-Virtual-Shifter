@@ -47,7 +47,9 @@ then connect your BC2 — it will get detected automatically.
 Wait for:
 
 ✅ Found device: CYCPLUS BC2 ...
+
 🔗 Connected
+
 🎧 Listening for shift signals...
 
 
