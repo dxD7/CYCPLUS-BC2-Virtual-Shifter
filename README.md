@@ -34,7 +34,7 @@ Run the script:
 python bc2_virtual_shifter.py
 
 
-Wait for Confirmation: The script will automatically connect. Wait for the success messages:
+Wait for Confirmation: The script will automatically connect. Wait for the success messages:  
 (If it fails to connect the first time and the script just closes, run it again and it should work)
 
 
