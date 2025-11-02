@@ -38,10 +38,10 @@ Wait for Confirmation: The script will automatically connect. Wait for the succe
 (If it fails to connect the first time and the script just closes, run it again and it should work)
 
 
-🔍 Scanning for BC2... (waiting for connection)
-✅ Found device: CYCPLUS BC2 ...
-🔗 Connected
-🎧 Listening for shift signals...
+🔍 Scanning for BC2... (waiting for connection)  
+✅ Found device: CYCPLUS BC2 ...  
+🔗 Connected  
+🎧 Listening for shift signals...  
 
 
 Start Riding: Open MyWhoosh (or your preferred app).
