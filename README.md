@@ -9,7 +9,7 @@ Perfect for setups like a Saris H3 or any trainer that doesn’t have built-in s
 
 ## 🧩 Features
 
-Maps upshift → K, downshift → I (MyWhoosh defaults)
+Maps upshift → k, downshift → i (MyWhoosh defaults)
 
 
 ## ⚙️ Requirements
