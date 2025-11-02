@@ -4,7 +4,7 @@ A small Python script that turns the CYCPLUS BC2 Bluetooth controller into a wor
 
 It connects to the BC2 over Bluetooth, listens for the upshift and downshift buttons, and sends keyboard presses which match MyWhoosh’s built-in virtual shifting controls.
 
-Perfect for setups like a Saris H3 or any trainer that doesn’t have built-in shifting.
+Perfect for setups like a Saris H3 or any trainer that doesn’t have built-in shifting.  
 
 
 🧩 Features
