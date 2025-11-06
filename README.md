@@ -27,12 +27,11 @@ pip install bleak pyautogui
 
 ## 🚀 How to Use
 
-Wake Up/Reset Shifter: Hold both the UP (+) and DOWN (-) buttons simultaneously for about 5 seconds.
-
 Run the script:
 
 python bc2_virtual_shifter.py
 
+Wake Up/Reset Shifter: Hold both the UP (+) and DOWN (-) buttons simultaneously for about 5 seconds.
 
 Wait for Confirmation: The script will automatically connect. Wait for the success messages:  
 (If it fails to connect the first time and the script just closes, run it again and it should work)
