@@ -112,11 +112,11 @@ async def main():
         async with BleakClient(device.address) as client:
             print(f"🔗 Connected to {device.name or 'Unnamed'}")
             # report device battery level - not tested as I have no BC2 - but it seems generic
-            battery_level = await client.read_gatt_char(BATTERY_LEVEL_CHARACTERISTIC_UUID)
-            if int.from_bytes(battery_level) > 20:
-                print(f"✅ Battery level {int.from_bytes(battery_level)}%")
+            battery_level = int.from_bytes(await client.read_gatt_char(BATTERY_LEVEL_CHARACTERISTIC_UUID))
+            if battery_level > 20:
+                print(f"✅ Battery level {battery_level}%")
             else:
-                print(f"❌ Battery level {int.from_bytes(battery_level)}%")
+                print(f"❌ Battery level {battery_level}%")
             print("🔍 Discovering services...")
             print("✅ Services discovered, subscribing to notifications...")
             
@@ -147,3 +147,4 @@ if __name__ == "__main__":
         if "Event loop is closed" not in str(e):
 
              print(f"\n🛑 Runtime Error: {e}")
+
