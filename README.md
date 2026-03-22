@@ -22,8 +22,7 @@ A Bluetooth Low Energy (BLE) adapter
 
 The following Python packages:
 
-pip install bleak pyautogui
-
+py -m pip install bleak pyautogui
 
 ## 🚀 How to Use
 
