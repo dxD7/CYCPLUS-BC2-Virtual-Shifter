@@ -9,6 +9,7 @@ import platform
 DEVICE_NAME = "BC2"
 DEBOUNCE_MS = 100            # Minimum time (ms) between two simulated keypresses
 UART_NOTIFY_UUID = "6e400003-b5a3-f393-e0a9-e50e24dcca9e"
+BATTERY_LEVEL_CHARACTERISTIC_UUID = "00002a19-0000-1000-8000-00805f9b34fb"
 
 # Key Map
 SHIFT_KEYS = {
@@ -110,6 +111,12 @@ async def main():
     try:
         async with BleakClient(device.address) as client:
             print(f"🔗 Connected to {device.name or 'Unnamed'}")
+            # report device battery level - not tested as I have no BC2 - but it seems generic
+            battery_level = int.from_bytes(await client.read_gatt_char(BATTERY_LEVEL_CHARACTERISTIC_UUID))
+            if battery_level > 20:
+                print(f"✅ Battery level {battery_level}%")
+            else:
+                print(f"❌ Battery level {battery_level}%")
             print("🔍 Discovering services...")
             print("✅ Services discovered, subscribing to notifications...")
             
@@ -138,4 +145,6 @@ if __name__ == "__main__":
         print("\n👋 Stopped by user.")
     except RuntimeError as e:
         if "Event loop is closed" not in str(e):
+
              print(f"\n🛑 Runtime Error: {e}")
+
